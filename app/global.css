@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url('../assets//logo_op.png');
+    background-repeat: no-repeat;
+    background-position: center; */
+    height: 100vh;
+    background-color: #ECFCCD;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

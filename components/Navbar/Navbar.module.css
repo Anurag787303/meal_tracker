@@ -1,0 +1,43 @@
+.navDiv_light {
+    height: 80px;
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+    color: #061835;
+}
+
+.navDiv_light>h1 {
+    font-size: 40px;
+}
+
+.navDiv_light>span {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navButtons_light>a>button,
+.navLinks_light>button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #061835;
+}
+
+.navButtons_light>a>button {
+    background-color: #eb5465;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
+
+.logoImageNavDiv_light {
+    height: 100%;
+}
+
+.logoImageNav_light {
+    width: 150px;
+    height: 150px;
+}

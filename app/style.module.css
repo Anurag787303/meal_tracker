@@ -1,0 +1,56 @@
+.styles.homepageDiv_light {}
+
+.heroimageDiv_light {}
+
+.heroimageDiv_light>img {
+    width: 100%;
+    height: 600px;
+}
+
+.infoDiv_light {
+    background-color: #ebf557;
+    margin: 0px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    padding: 40px 20px;
+}
+
+.sideImageDiv_light {}
+
+.infoContent_light {
+    background-color: rgba(212, 250, 239, 0.7);
+    width: 40%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 10px 30px 30px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoContent_light>h1 {
+    font-size: 40px;
+}
+
+.infoContent_light>span {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.infoContent_light>span>p {
+    font-size: 20px;
+}
+
+.infoContent_light>span>button {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #061835;
+    background-color: #eb5465;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
