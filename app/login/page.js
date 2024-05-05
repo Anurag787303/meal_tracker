@@ -1,8 +1,13 @@
 import styles from './style.module.css'
 import Link from 'next/link'
-import { loginUser } from '@/lib/actions'
+import { loginUser, isAuthenticated } from '@/lib/actions'
+import { redirect } from 'next/navigation'
 
-const LoginForm = () => {
+const LoginForm = async () => {
+    const isAuth = await isAuthenticated()
+
+    if (isAuth) redirect('/dashboard')
+
     return (
         <div className={styles.formOutDiv_light}>
             <div className={styles.formDiv_light}>
