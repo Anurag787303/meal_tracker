@@ -1,0 +1,77 @@
+.dashboardContainer_light {
+    min-height: 95vh;
+    background-color: transparent;
+    margin: 2.5vh 50px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_light {
+    color: white;
+    background-color: black;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 2px solid #effbd1;
+    border-radius: 8px;
+}
+
+.header_light>span {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboardBody_light {
+    display: flex;
+    height: 400px;
+    flex-grow: 1;
+}
+
+.dashboardLeft_light,
+.dashboardRight_light {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardLeft_light {
+    height: 100%;
+    flex-grow: 2;
+    /* background-color: yellow; */
+    border-right: 5px solid #effbd1
+}
+
+.dashboardRight_light {
+    height: 100%;
+    flex-grow: 5;
+    /* background-color: red; */
+}
+
+/* .leftHeader_light {
+    border-right: 2px solid white;
+} */
+
+.leftHeader_light,
+.rightHeader_light {
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 8px 8px 0 0;
+}
+
+/* .leftBody_light {
+    border-right: 2px solid black;
+} */
+
+.leftBody_light,
+.rightBody_light {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 8px;
+}
