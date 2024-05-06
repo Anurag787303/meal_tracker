@@ -1,6 +1,10 @@
-import { getUserDetails, isAuthenticated } from "@/lib/actions"
+import { getUserDetails, isAuthenticated, createDay } from "@/lib/actions"
 import { redirect } from "next/navigation"
 import style from './style.module.css'
+import Image from "next/image"
+import dustbinIcon from "@/assets/dustbin.svg"
+import plusIcon from "@/assets/plus.svg"
+import DayFormWrapper from './dayFormWrapper.js'
 
 const Dashboard = async () => {
     const isAuth = await isAuthenticated()
@@ -26,7 +30,10 @@ const Dashboard = async () => {
             <div className={style.dashboardBody_light}>
                 <div className={style.dashboardLeft_light}>
                     <div className={style.leftHeader_light}>
-                        <h1>Schedule</h1>
+                        <span>
+                            <h1>Schedule</h1>
+                            <DayFormWrapper />
+                        </span>
                     </div>
                     <div className={style.leftBody_light}>
 
@@ -34,7 +41,14 @@ const Dashboard = async () => {
                 </div>
                 <div className={style.dashboardRight_light}>
                     <div className={style.rightHeader_light}>
-                        <h1>Content</h1>
+                        <span>
+                            <h1>Content</h1>
+                            <span>
+                                <div>
+                                    <Image src={plusIcon} />
+                                </div>
+                            </span>
+                        </span>
                     </div>
                     <div className={style.rightBody_light}>
 

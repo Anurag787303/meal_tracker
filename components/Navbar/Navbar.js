@@ -10,14 +10,14 @@ const Navbar = () => {
                 DishDiary
             </h1>
 
-            <span className={styles.navLinks_light}>
+            {/* <span className={styles.navLinks_light}>
                 <button>
                     Items
                 </button>
                 <button>
                     Stats
                 </button>
-            </span>
+            </span> */}
 
             <span className={styles.navButtons_light}>
                 <Link href='/login'>

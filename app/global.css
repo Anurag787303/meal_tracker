@@ -7,8 +7,10 @@ body {
     /* background-image: url('../assets//logo_op.png');
     background-repeat: no-repeat;
     background-position: center; */
-    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
     background-color: #ECFCCD;
+    box-sizing: border-box;
 }
 
 button:hover {
