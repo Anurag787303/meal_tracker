@@ -57,7 +57,8 @@
     gap: 20px;
 }
 
-.form_light>div>button {
+.form_light>div>button,
+.addMealButton_light>button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -65,3 +66,13 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.addMealButton_light {
+    display: flex;
+    gap: 20px;
+}
+
+/* .addMealButton_light>input {
+    height: 20px;
+    width: 50%;
+} */

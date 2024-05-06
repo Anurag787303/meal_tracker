@@ -5,6 +5,8 @@ import Image from "next/image"
 import dustbinIcon from "@/assets/dustbin.svg"
 import plusIcon from "@/assets/plus.svg"
 import DayFormWrapper from './dayFormWrapper.js'
+import MealFormWrapper from './mealFormWrapper.js'
+import MealsWrapper from '@/components/Meals/MealsWrapper'
 
 const Dashboard = async () => {
     const isAuth = await isAuthenticated()
@@ -21,11 +23,7 @@ const Dashboard = async () => {
         <div className={style.dashboardContainer_light}>
             <div className={style.header_light}>
                 <h1>DishDiary</h1>
-                <span>
-                    <p>Items</p>
-                    <p>Stats</p>
-                    <p>Profile</p>
-                </span>
+                <MealsWrapper />
             </div>
             <div className={style.dashboardBody_light}>
                 <div className={style.dashboardLeft_light}>
@@ -43,11 +41,7 @@ const Dashboard = async () => {
                     <div className={style.rightHeader_light}>
                         <span>
                             <h1>Content</h1>
-                            <span>
-                                <div>
-                                    <Image src={plusIcon} />
-                                </div>
-                            </span>
+                            <MealFormWrapper />
                         </span>
                     </div>
                     <div className={style.rightBody_light}>

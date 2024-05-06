@@ -24,6 +24,16 @@
     gap: 20px;
 }
 
+.header_light>span>p {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.header_light>span>p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
 .dashboardBody_light {
     display: flex;
     height: 400px;
